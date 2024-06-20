@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+.login-container {
+    background-color: white;
+    padding: 40px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: block;
+    box-sizing: border-box;
+}
+
+button[type=button],
+button[type=submit] {
+    background-color: #2b2d42;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    /* Закругляем края кнопок */
+    cursor: pointer;
+    /* Делим ширину на две кнопки и вычитаем отступ */
+    display: inline-block;
+    /* Отображаем кнопки в одной строке */
+}
+
+button[type=button]:hover,
+button[type=submit]:hover {
+    background-color: #ef233c;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+
+
+/* Медиазапросы для адаптации под мобильные устройства */
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 80%;
+        padding: 20px;
+    }
+    input[type="text"],
+    input[type="password"] {
+        padding: 8px;
+    }
+    .buttons button {
+        padding: 8px 10px;
+        width: auto;
+    }
+}

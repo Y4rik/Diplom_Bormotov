@@ -1,0 +1,459 @@
+/* Стили для шапки сайта */
+
+header {
+    background-color: #2b2d42;
+    /* Цвет фона */
+    color: white;
+    /* Цвет текста */
+    text-align: center;
+    /* Выравнивание текста по центру */
+    padding: 20px 20%;
+    /* Внутренние отступы сверху и снизу, ноль слева и справа */
+    font-size: 21px;
+    /* Размер шрифта */
+}
+
+
+/* Стили для модального окна */
+
+.modal {
+    display: none;
+    /* Начально скрываем модальное окно */
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Оформление контента модального окна */
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    /* Закругляем края модального окна */
+    width: 50%;
+    /* Уменьшаем ширину модального окна */
+}
+
+
+/* Стили для кнопки закрытия модального окна */
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* Стили для полей ввода в форме */
+
+input[type=text],
+input[type=password] {
+    /* Уменьшаем ширину полей ввода */
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    /* Закругляем края полей ввода */
+    box-sizing: border-box;
+    margin-left: 15px;
+}
+
+
+/* Стили для кнопки "Войти" */
+
+button[type=submit] {
+    background-color: #2b2d42;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    /* Закругляем края кнопок */
+    cursor: pointer;
+    width: calc(40% - 8px);
+    /* Делим ширину на две кнопки и вычитаем отступ */
+    display: inline-block;
+    /* Отображаем кнопки в одной строке */
+}
+
+button[type=submit]:hover {
+    background-color: #ef233c;
+}
+
+
+/* Измененный стиль для body из предыдущего запроса */
+
+body {
+    margin: 0;
+    /* Убираем внешние отступы */
+    padding: 0;
+    /* Убираем внутренние отступы */
+    font-family: Arial, sans-serif;
+    /* Устанавливаем шрифт */
+}
+
+.header_img {
+    background-image: url(gym_061.jpg);
+    height: 30vh;
+    /* Высота блока, в котором отображается изображение */
+    background-position: center;
+    /* Центрируем изображение */
+    background-size: cover;
+    /* Масштабируем изображение так, чтобы оно полностью покрывало блок */
+    background-repeat: no-repeat;
+    /* Отключаем повторение фонового изображения */
+    padding-top: 15%;
+}
+
+
+/* Стили для блока основного контента */
+
+.main-content {
+    background-color: #8d99ae;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-bottom: 82px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Добавлено свойство flex-wrap */
+    justify-content: center;
+    align-items: center;
+}
+
+.title-container {
+    padding: 20px;
+}
+
+.title-container h1 {
+    color: #000000;
+    font-size: 30px;
+    /* Увеличили размер шрифта */
+    /* Добавим светящуюся рамку вокруг надписи */
+}
+
+.block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    /* Чтобы занимал всю доступную ширину */
+    padding: 20px 0;
+    /* Добавлено для отступа между надписью и блоками */
+}
+
+.block {
+    background-color: #fefefe;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
+    flex: 1 0 300px;
+    /* Гибкое управление размером блока: установим базовый размер на 200px */
+    display: flex;
+    /* Используем flexbox для выравнивания содержимого */
+    flex-direction: column;
+    /* Располагаем содержимое вертикально */
+    justify-content: center;
+    /* Выравниваем содержимое по центру по вертикали */
+}
+
+.block img {
+    max-width: 270px;
+    /* Задаем максимальную ширину изображения */
+    max-height: 270px;
+    /* Задаем максимальную высоту изображения */
+    width: auto;
+    /* Автоматическая ширина */
+    height: auto;
+    /* Автоматическая высота */
+    margin: 0 auto;
+    /* Центрируем изображение по горизонтали */
+    display: block;
+    /* Делаем изображение блочным элементом */
+}
+
+.block p {
+    margin: 0;
+}
+
+.block:hover {
+    transform: scale(1.05);
+    /* увеличение размера на 10% при наведении */
+    border-color: #ef233c;
+    /* Цвет обводки при наведении */
+}
+
+
+/* Стили для навигационного меню */
+
+nav {
+    margin: 0;
+    /* Убираем внешние отступы */
+    padding: 0;
+    /* Убираем внутренние отступы */
+    font-family: Arial, sans-serif;
+    /* Устанавливаем шрифт */
+}
+
+
+/* Стили для навигационного меню */
+
+nav ul {
+    list-style-type: none;
+    /* Убираем маркеры списка */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* Используем flexbox */
+    justify-content: flex-start;
+    /* Выравниваем элементы слева */
+}
+
+nav ul li {
+    margin-right: 20px;
+    /* Отступ между кнопками */
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    /* У последнего элемента убираем отступ */
+    margin-left: auto;
+    /* Выравниваем в левом углу */
+}
+
+nav ul li a {
+    color: white;
+    /* Цвет текста */
+    text-decoration: none;
+    /* Убираем подчеркивание ссылок */
+    padding: 10px 15px;
+    /* Внутренние отступы */
+    border-radius: 10px;
+    /* Скругляем углы */
+}
+
+nav ul li a:hover {
+    background-color: #ef233c;
+    /* Полупрозрачный белый фон при наведении */
+}
+
+.exit:hover {
+    background-color: #ef233c;
+    /* Полупрозрачный белый фон при наведении */
+}
+
+.main-content-ex {
+    background-color: #8d99ae;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 10px;
+    /*display: flex;
+    flex-wrap: wrap;
+    /* Добавлено свойство flex-wrap */
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.search-container {
+    display: flex;
+    /* Размещаем элементы внутри контейнера в одной строке */
+    align-items: center;
+    /* Выравниваем элементы по вертикали */
+}
+
+.search-input {
+    flex-grow: 1;
+    /* Растягиваем поле ввода, чтобы оно занимало всю доступную ширину */
+    padding: 10px;
+    /* Добавляем внутренний отступ для улучшения внешнего вида */
+    font-size: 18px;
+    /* Устанавливаем размер шрифта */
+    border: 1px solid #ccc;
+    /* Добавляем рамку вокруг поля ввода */
+    border-radius: 5px;
+    /* Скругляем углы рамки */
+    width: 700px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    /* Задаем размеры кнопки */
+    font-size: 18px;
+    /* Устанавливаем размер шрифта */
+    border: none;
+    /* Убираем рамку кнопки */
+    background-color: #2b2d42;
+    /* Задаем цвет фона кнопки */
+    color: white;
+    /* Задаем цвет текста кнопки */
+    border-radius: 5px;
+    /* Скругляем углы кнопки */
+    margin-left: 10px;
+    /* Добавляем отступ слева от кнопки */
+    margin-right: 15px;
+    cursor: pointer;
+    /* Задаем стилизованный курсор при наведении на кнопку */
+}
+
+.search-button:hover {
+    background-color: #ef233c;
+    /* Изменяем цвет фона кнопки при наведении */
+}
+
+
+/* Стили для подвала сайта */
+
+.footer {
+    background-color: #2b2d42;
+    /* Новый цвет фона подвала */
+    color: white;
+    /* Цвет текста */
+    text-align: center;
+    /* Выравнивание текста по центру */
+    padding: 10px 0;
+    /* Увеличиваем внутренние отступы сверху и снизу, ноль слева и справа */
+    width: 100%;
+    /* Ширина на всю доступную ширину */
+    position: fixed;
+    /* Фиксированное позиционирование */
+    bottom: 0;
+}
+
+
+/* Медиазапрос для экранов шириной меньше 768px */
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px 10%;
+        /* Уменьшаем отступы слева и справа до 10% */
+    }
+}
+
+
+/* Медиазапрос для экранов шириной меньше 576px */
+
+@media only screen and (max-width: 576px) {
+    header {
+        padding: 20px 5%;
+        /* Уменьшаем отступы слева и справа до 5% */
+    }
+}
+
+
+/* Внешний контейнер для каждого результата */
+
+.results-container div {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+/* Изображение */
+
+.results-container div img {
+    width: 500px;
+    /* Ширина изображения */
+    height: 500px;
+    /* Высота изображения */
+    border-radius: 10px;
+    /* Скругление краев */
+    margin-right: 20px;
+    /* Отступ справа */
+    background-color: white;
+    margin-left: 20px;
+    margin-bottom: 105px;
+}
+
+
+/* Контейнер для текстовой информации */
+
+.results-container div .text-container {
+    display: flex;
+    flex-direction: column;
+    /* Располагаем элементы вертикально */
+}
+
+
+/* Название упражнения */
+
+.results-container div h3 {
+    font-size: 35px;
+    /* Размер шрифта */
+    margin: 20px;
+    /* Убираем внешние отступы */
+}
+
+
+/* Категория упражнения */
+
+.results-container div h2 {
+    font-size: 16px;
+    /* Размер шрифта */
+    margin: 20px;
+    /* Убираем внешние отступы */
+}
+
+
+/* Описание упражнения */
+
+.results-container div p {
+    font-size: 25px;
+    /* Размер шрифта */
+    margin: 20px;
+    /* Убираем внешние отступы */
+}
+
+.search-container {
+    position: relative;
+    /* Устанавливаем позицию контейнера как относительную */
+}
+
+.autocomplete-results {
+    position: absolute;
+    /* Позиционируем блок результатов абсолютно */
+    top: calc(100% + 5px);
+    /* Располагаем его под строкой поиска и кнопкой */
+    left: 0;
+    /* Выравниваем слева */
+    width: 100%;
+    /* Занимаем всю доступную ширину */
+    background-color: white;
+    /* Белый фон */
+    border-radius: 5px;
+    /* Скругление краев */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    /* Тень */
+    display: none;
+    /* Скрываем блок по умолчанию */
+    z-index: 999;
+    /* Позиционируем поверх других элементов */
+}

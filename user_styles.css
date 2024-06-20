@@ -1,0 +1,503 @@
+/* Стили для шапки сайта */
+
+header {
+    background-color: #2b2d42;
+    color: white;
+    text-align: center;
+    padding: 20px 20%;
+    font-size: 21px;
+}
+
+.modal {
+    display: none;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 50%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input[type=text],
+input[type=password] {
+    width: calc(100% - 40px);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header_img {
+    background-image: url(gym_061.jpg);
+    height: 30vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 15%;
+}
+
+.main-content {
+    background-color: #8d99ae;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title-container {
+    padding: 20px;
+}
+
+.title-container h1 {
+    color: #000000;
+    font-size: 30px;
+}
+
+.block-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px 0;
+}
+
+.block {
+    width: 30%;
+    background-color: #fefefe;
+    margin: 10px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+    border: 2px solid transparent;
+}
+
+.block img {
+    max-width: 50%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.block p {
+    margin: 0;
+}
+
+.block:hover {
+    transform: scale(1.05);
+    border-color: #ef233c;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #ef233c;
+}
+
+.exit-btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    border: 2px solid #ef233c;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: -20px;
+}
+
+.exit-btn:hover {
+    background-color: #ef233c;
+    color: #fff;
+}
+
+.main-content-ex {
+    background-color: #8d99ae;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 13%;
+    margin-right: 13%;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.user-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #2b2d42;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.user-button:hover {
+    background-color: #ef233c;
+}
+
+.footer {
+    background-color: #2b2d42;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    margin-top: auto;
+    bottom: 0;
+}
+
+.table-container {
+    margin-bottom: 20px;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table-container td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table-container tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        padding: 20px 10%;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    header {
+        padding: 20px 5%;
+    }
+}
+
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    min-height: 89vh;
+}
+
+.profile-block {
+    flex-basis: 30%;
+}
+
+.profile-block img {
+    width: 250px;
+    height: 250px;
+}
+
+.button-block {
+    flex-basis: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.profile-block p {
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+}
+
+button[type=submit] {
+    background-color: #2b2d42;
+    color: white;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    /*width: calc(40% - 8px);*/
+    display: inline-block;
+    justify-content: center;
+}
+
+button[type=submit]:hover {
+    background-color: #ef233c;
+}
+
+.results-container div {
+    display: flex;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.results-container div img {
+    width: 500px;
+    height: 500px;
+    border-radius: 10px;
+    margin-right: 20px;
+    background-color: white;
+}
+
+.results-container div .text-container {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background-color: #f2f2f2;
+    border-radius: 8px;
+}
+
+.results-container div h3 {
+    font-size: 35px;
+    margin: 20px 0;
+}
+
+.results-container div h2 {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.results-container div p {
+    font-size: 25px;
+    margin: 20px 0;
+}
+
+.results-container div label {
+    margin: 20px 0;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+}
+
+p.advice {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+p.advice2 {
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+}
+
+select {
+    font-size: 18px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 335px;
+}
+
+label {
+    padding: 15px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#calculate-workout-form {
+    text-align: center;
+}
+
+#calculate-workout-form button {
+    margin-top: 10px;
+}
+
+form[action="save_data.php"] {
+    text-align: center;
+}
+
+form[action="save_data.php"] button {
+    margin-top: 10px;
+}
+
+form {
+    padding-left: 2%;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 5px;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+#checkbox-form label {
+    font-size: 40px;
+    color: #2b2d42;
+    display: block;
+    margin-bottom: 5px;
+    width: 45%;
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #2b2d42;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 20px auto 0;
+}
+
+.meal-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.meal {
+    margin-bottom: 20px;
+}
+
+
+/* Стили для кнопок и выпадающего списка в блоке упражнения */
+
+.exercise {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.exercise button {
+    padding: 5px 10px;
+    font-size: 20px;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+.exercise select {
+    font-size: 14px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+/* Стили для формы */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
